@@ -8,7 +8,9 @@ import Add from "./operators/add";
 function App() {
   return (
     <>
-      <h1>King Of Calculating</h1>
+      <div className="flex">
+        <h1>King Of Calculating</h1>
+      </div>
       <Multiply />
       <Divide />
       <Add />
