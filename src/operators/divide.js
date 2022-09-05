@@ -31,13 +31,13 @@ function Divide() {
 
   return (
     <div className="Operator">
-      <div>
+      <div className="flex">
         <button className="challengeme" onClick={generateProblem}>
           Challenge me!
         </button>
       </div>
       <div className="problem">{problem}</div>
-      <div>
+      <div className="flex">
         <button
           className="showme"
           onClick={() => {
@@ -52,6 +52,7 @@ function Divide() {
           <br />
           <p className="inpercent">But what is the solution in %?</p>
           <button
+            className="flex"
             onClick={() => {
               setShowPercent({
                 display: "block",
@@ -63,7 +64,6 @@ function Divide() {
             Show me in percent %
           </button>
           <p style={showPercent}>
-            {" "}
             {`The solution in percent is: ${(solution * 100).toFixed(1)}%`}
           </p>
         </div>

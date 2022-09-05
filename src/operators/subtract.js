@@ -25,13 +25,13 @@ function Subtract() {
 
   return (
     <div className="Operator">
-      <div>
+      <div className="flex">
         <button className="challengeme" onClick={generateProblem}>
           Challenge me!
         </button>
       </div>
       <div className="problem">{problem}</div>
-      <div>
+      <div className="flex">
         <button
           className="showme"
           onClick={() => {
