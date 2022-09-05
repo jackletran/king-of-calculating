@@ -7,13 +7,23 @@
 }
 
 .problem {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 input {
   padding: 10px;
+  margin-top: 20px;
 }
 
 .Operator {
   border-bottom: 20px solid black;
+}
+
+.solutionis {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.inpercent {
+  font-size: 1.3rem;
 }

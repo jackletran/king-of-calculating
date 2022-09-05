@@ -5,14 +5,16 @@ function Divide() {
     let firstRandom = Math.floor(1 + Math.random() * range1);
     let secondRandom = Math.floor(1 + Math.random() * range2);
 
-    setProblem(`What is ${firstRandom} divided by ${secondRandom}, Evrard?`);
+    setProblem(`${firstRandom} / ${secondRandom} = ?`);
 
     let result = firstRandom / secondRandom;
 
     setSolution(result.toFixed(2));
 
     setDisplayStyle({ display: "none" });
-    setShowPercent({ display: "none" });
+    setShowPercent({
+      display: "none",
+    });
   };
 
   const [problem, setProblem] = useState(
@@ -44,19 +46,26 @@ function Divide() {
         >
           Show me the solution!
         </button>
-        <div className="solutionis" style={displayStyle}>
-          <p>The solution is: {solution}</p>
+        <div style={displayStyle}>
+          <p className="solutionis">The solution is: {solution}</p>
           <br />
           <br />
-          <p>But what is the solution in %?</p>
+          <p className="inpercent">But what is the solution in %?</p>
           <button
             onClick={() => {
-              setShowPercent({ display: "block" });
+              setShowPercent({
+                display: "block",
+                fontWeight: "bolder",
+                fontSize: "1rem",
+              });
             }}
           >
             Show me in percent %
           </button>
-          <p style={showPercent}>{`${(solution * 100).toFixed(1)}%`}</p>
+          <p style={showPercent}>
+            {" "}
+            {`The solution in percent is: ${(solution * 100).toFixed(1)}%`}
+          </p>
         </div>
       </div>
       <div className="range">

@@ -5,7 +5,7 @@ function Subtract() {
     let firstRandom = Math.floor(1 + Math.random() * range1);
     let secondRandom = Math.floor(1 + Math.random() * range2);
 
-    setProblem(`What is ${firstRandom} - ${secondRandom}, Evrard?`);
+    setProblem(`${firstRandom} - ${secondRandom} = ?`);
 
     setSolution(firstRandom - secondRandom);
 

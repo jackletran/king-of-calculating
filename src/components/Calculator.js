@@ -3,6 +3,7 @@ import Result from "./Result";
 
 function Calculator() {
   const [result, setResult] = useState(0);
+
   return (
     <div className="Calculator">
       <Result result={result} setResult={setResult} />
