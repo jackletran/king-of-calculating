@@ -46,5 +46,35 @@ button {
   font-weight: bolder;
   text-shadow: 1px 1px black;
   font-size: 1.3rem;
-  min-width: 300px;
+  width: 300px;
+}
+
+.Counter {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.count {
+  background-color: forestgreen;
+  color: whitesmoke;
+  font-weight: bolder;
+  text-shadow: 1px 1px black;
+  font-size: 1.3rem;
+}
+
+.count,
+.plus,
+.clear {
+  padding: 10px;
+  width: 200px;
+  border: 2px solid black;
+}
+
+.clear {
+  background-color: crimson;
+}
+
+.plus {
+  background-color: dodgerblue;
 }
