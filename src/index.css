@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.problem {
+    font-size: 1.5rem;
+}
+
+input {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.Operator {
+    border-top: 20px solid black;
+}
+
+.solutionis {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.inpercent {
+    font-size: 1.3rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    padding: 30px;
+    background-color: cornflowerblue;
+    color: whitesmoke;
+    font-weight: bolder;
+    text-shadow: 1px 1px black;
+    font-size: 1.3rem;
+    width: 300px;
+}
+
+.Counter {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.Timer {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.time {
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    font-size: 2.5rem;
+    padding: 0;
+}
+
+.timerControl {
+    padding: 20px;
+    max-width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.stop,
+.reset {
+    background-color: red;
+}
+
+.start,
+.resume {
+    background-color: green;
+}
+
+.count {
+    background-color: forestgreen;
+    color: whitesmoke;
+    font-weight: bolder;
+    text-shadow: 1px 1px black;
+    font-size: 1.3rem;
+}
+
+.count,
+.plus,
+.clear {
+    padding: 10px;
+    width: 200px;
+    border: 2px solid black;
+}
+
+.clear {
+    background-color: crimson;
+}
+
+.plus {
+    background-color: dodgerblue;
+}

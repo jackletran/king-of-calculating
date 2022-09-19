@@ -1,10 +1,11 @@
 import "./App.css";
-import "./Operators.css";
+import "./index.css";
 import Multiply from "./operators/Multiply";
 import Divide from "./operators/Divide";
 import Subtract from "./operators/Subtract";
 import Add from "./operators/Add";
 import Counter from "./components/Counter";
+import Timer from "./components/Timer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Add />
       <Subtract />
       <Counter />
+      <Timer />
     </>
   );
 }
