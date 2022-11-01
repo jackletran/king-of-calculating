@@ -1,5 +1,5 @@
 function Counter(props) {
-  const { counter, setCounter } = props;
+  const { counter, setCounter, conditionCounter, setConditionCounter } = props;
 
   return (
     <div className="Counter flex">
@@ -8,6 +8,7 @@ function Counter(props) {
         className="plus"
         onClick={() => {
           setCounter(counter + 1);
+          setConditionCounter(conditionCounter + 1);
         }}
       >
         Plus
@@ -16,6 +17,7 @@ function Counter(props) {
         className="clear"
         onClick={() => {
           setCounter(0);
+          setConditionCounter(0);
         }}
       >
         Clear
